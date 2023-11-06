@@ -192,9 +192,11 @@ let selectCategoriesEl = document.getElementById("select-categories");
               // paymentFormEl.options.length = 0;
             }
             submiteEl.onclick = function(){
-
-              textEl.textContent = "Your card has been Charged!";           
-             }
+            
+                event.preventDefault();
+              textEl.textContent = "Your card has been Charged!";
+            
+              }
           } 
            
          
